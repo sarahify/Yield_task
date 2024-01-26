@@ -2,6 +2,7 @@ import "./App.css";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import AuthLayout from "./layouts/auth";
 import SignInPage from "./pages/SignInPage";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               />
             }
           />
+          <Route path="/" element={<LandingPage />}/>
         </Routes>
       </BrowserRouter>
     </>
